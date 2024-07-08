@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grammer Test  </title>
+</head>
+<style>
+    body{
+        background-color: rgb(238, 238, 238);
+    }
+    .container{
+        position: absolute;
+        left: 100px;
+        top: 70px;
+        border: 1px solid #000;
+        width: 1170px;
+        height: auto;
+        padding: 0px 0px 10px 0px;
+        background-color: #005368;
+        color: aliceblue;
+    }
+    h3{
+        background-color: azure;
+        margin: 0px;
+        padding: 15px;
+        font-size: 22px;
+        color: #000;
+    }
+    textarea{
+        margin: 5px 5px 5px 5px;
+        width: 1150px;
+        height: 350px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        background-color: rgb(255, 255, 255);
+    }
+
+   .content h4{
+        /* border:1px solid #000; */
+        font-size: 22px;
+        float: left;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 0px 0px 0px 25px;
+
+    }
+
+    span{
+        color: rgb(0, 243, 12);
+        font-family:cursive;
+    }
+
+    .timer{
+        align-items: right;
+        text-align: right;
+        margin: 5px;
+    }
+    span{
+        margin: 10px;
+        font-size: 20px;
+    }
+</style>
+<body>
+        <div class="container">
+
+            <div class="header">  
+                <h3 style="border : 1px solid #000">Q. Hard work is the key to success or is it?  </h3>
+            </div>
+            <div class="content">
+                <textarea id="area" name="subject" placeholder="Write in 300 Words ...." ></textarea> 
+            </div>
+
+            <div class="timer">
+                    <span id="word">0</span> Word &nbsp &nbsp&nbsp&nbsp
+                    <span id="char">0</span>Character
+            </div>
+       
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
