@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Div</title>
+  </head>
+  <style>
+    #container {
+      background-color: aquamarine;
+    }
+  </style>
+  <body>
+    <div id="container"></div>
+
+    <script>
+      function createDiv(width, height, text) {
+        var newDiv = document.createElement("div");
+
+        newDiv.style.width = width + "px";
+        newDiv.style.height = height + "px";
+        newDiv.textContent = text;
+
+        document.getElementById("container").appendChild(newDiv);
+      }
+
+      window.createDiv = createDiv(200, 200, "Hi this is my Task 2");
+    </script>
+  </body>
+</html>

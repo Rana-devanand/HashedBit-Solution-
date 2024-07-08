@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Theme Toggle</title>
+  </head>
+  <body>
+    <div id="app" class="day">
+      <p>
+        I am a HashedBit student, ready to become an awesome full stack
+        developer
+      </p>
+      <button onclick="swapTheme()" id="swap" class="button_day">
+        Toggle theme
+      </button>
+    </div>
+
+    <script>
+      function swapTheme() {
+        var appDiv = document.getElementById("app");
+        var button = document.getElementById("swap");
+
+        if (appDiv.classList.contains("day")) {
+          appDiv.classList.remove("day");
+          appDiv.classList.add("night");
+          button.classList.remove("button_day");
+          button.classList.add("button_night");
+        } else {
+          appDiv.classList.remove("night");
+          appDiv.classList.add("day");
+          button.classList.remove("button_night");
+          button.classList.add("button_day");
+        }
+      }
+    </script>
+  </body>
+</html>
