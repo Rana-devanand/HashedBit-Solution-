@@ -17,9 +17,9 @@ const movies = [
   },
   {
     id: 3,
-    title: "The Greatest of All..",
+    title: "Srikanth",
     imgSrc:
-      "https://preview.redd.it/the-greatest-of-all-time-new-poster-v0-21g6479eu68d1.jpeg?auto=webp&s=dc36f40c9fa8d22ab6c2149b730324f4e86ed401",
+      "https://media0050.elcinema.com/uploads/_315x420_0b6243547fa440e9dd6bbd215fedcdf980e2d33bdaad2566b7fd9694667fb5a7.jpg",
   },
   {
     id: 4,
@@ -84,9 +84,7 @@ const MovieList = () => {
             <div className="w-full px-3 py-4">
               <h2 className="font-semibold text-xl">{movie.title}</h2>
               <p className="text-xs mt-3">Hindi</p>
-              <Link to={`/details/${movie.id}`} image={movie.imgSrc}>
-                View Details
-              </Link>
+              <Link to={`/details/${movie.id}`}>View Details</Link>
             </div>
           </div>
         ))}
