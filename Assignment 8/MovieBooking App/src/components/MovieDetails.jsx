@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaThumbsUp } from "react-icons/fa";
+import Premiere from "./Premiere";
 const movies = [
   {
     id: 1,
@@ -81,6 +82,7 @@ const MovieDetails = () => {
   const style = { color: "white ", fontSize: "1rem" };
   return (
     <>
+      <Premiere />
       <div className="movie-list w-full h-full bg-zinc-700 flex justify-start items-center flex-wrap">
         <div className="w-52 bg-zinc-100 rounded-md overflow-hidden mx-3 my-4 ml-6">
           <div className="w-full h-72 bg-zinc-300 font-semibold">
@@ -138,7 +140,7 @@ const MovieDetails = () => {
           </div>
 
           <div className="BookNow">
-            <Link to={`/book/${movie.id}`}>
+            <Link to={`/book/${movie.title}`}>
               <button className="w-32 py-3 text-white bg-red-500 rounded-md hover:bg-red-600">
                 Book Tickets
               </button>
@@ -150,8 +152,4 @@ const MovieDetails = () => {
   );
 };
 
-// <h1>{movie.title}</h1>
-// <p>{movie.description}</p>
-// <img src={movie.imgSrc} alt="" srcset="" />
-// <Link to={`/book/${movie.id}`}>Book Seat</Link>
 export default MovieDetails;

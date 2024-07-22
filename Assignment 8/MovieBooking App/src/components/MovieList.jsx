@@ -67,6 +67,7 @@ const movies = [
 const MovieList = () => {
   return (
     <>
+      <Premiere></Premiere>
       <div className="movie-list w-full h-full bg-sky-950 flex justify-center items-center flex-wrap ">
         {movies.map((movie) => (
           <div className="w-52 bg-zinc-100 rounded-md overflow-hidden mx-3 my-4">

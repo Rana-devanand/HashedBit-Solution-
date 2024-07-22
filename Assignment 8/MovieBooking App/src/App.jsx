@@ -5,7 +5,7 @@ import BookSeat from "./components/BookSeat";
 import MovieDetails from "./components/MovieDetails";
 import MovieList from "./components/MovieList";
 import Navbar from "./components/Navbar";
-import Premiere from "./components/Premiere";
+
 import Footer from "./components/Footer";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Premiere />
+
         <Routes>
           <Route path="/" element={<MovieList />} />
           <Route path="/details/:id" element={<MovieDetails />} />
