@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import BookingNavBar from "../components/Navbar/BookingNavBar";
 
 const BookSeat = () => {
   const { id } = useParams();
@@ -15,6 +16,7 @@ const BookSeat = () => {
 
   return (
     <>
+      <BookingNavBar />
       <h1 className="flex justify-center bg-slate-300 font-serif text-4xl ">
         Book Your Tickets
       </h1>

@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import { FaThumbsUp } from "react-icons/fa";
 import Premiere from "./Premiere";
+import Navbar from "./Navbar";
 const movies = [
   {
     id: 1,
@@ -82,6 +83,7 @@ const MovieDetails = () => {
   const style = { color: "white ", fontSize: "1rem" };
   return (
     <>
+      <Navbar></Navbar>
       <Premiere />
       <div className="movie-list w-full h-full bg-zinc-700 flex justify-start items-center flex-wrap">
         <div className="w-52 bg-zinc-100 rounded-md overflow-hidden mx-3 my-4 ml-6">

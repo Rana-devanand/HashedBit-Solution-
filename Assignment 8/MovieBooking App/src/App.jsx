@@ -12,8 +12,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
-
         <Routes>
           <Route path="/" element={<MovieList />} />
           <Route path="/details/:id" element={<MovieDetails />} />

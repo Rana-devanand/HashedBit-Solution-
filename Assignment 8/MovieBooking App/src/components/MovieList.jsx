@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Premiere from "./Premiere";
+import Navbar from "./Navbar";
 
 const movies = [
   {
@@ -67,7 +68,8 @@ const movies = [
 const MovieList = () => {
   return (
     <>
-      <Premiere></Premiere>
+      <Navbar />
+      <Premiere />
       <div className="movie-list w-full h-full bg-sky-950 flex justify-center items-center flex-wrap ">
         {movies.map((movie) => (
           <div className="w-52 bg-zinc-100 rounded-md overflow-hidden mx-3 my-4">
